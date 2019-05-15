@@ -1,51 +1,91 @@
-import React, { Component } from 'react';
-import {useRoutes} from 'hookrouter';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
+import { useRoutes } from 'hookrouter';
 import './App.css';
 
 const routes = {
-    '/': () => <HomePage />,
-    '/contact': () => <ContactPage />,
-    '/information': () => <InformationPage />,
+    '/': () => <Home videoSrc={'home.mp4'} />,
+    '/stockists': () => <Stockist videoSrc={'stockist.mp4'} />,
+    '/information': () => <Information videoSrc={'info.mp4'} />,
+    '/about': () => <About videoSrc={'about.mp4'} />,
 };
 
 
-class HomePage extends Component {
+class Home extends Component {
   render() {
+    const { videoSrc } = this.props;
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to HomeSlice</h2>
+      <Fragment>
+        <video autoPlay muted loop id="myVideo">
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className="App">
+          <div className="App-header">
+          </div>
+          <p className="App-intro">
+            To get started, edit <code>src/App.js</code> and save to reload.
+          </p>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </Fragment>
     );
   }
 }
 
-class ContactPage extends Component {
+class Stockist extends Component {
   render() {
+    const { videoSrc } = this.props;
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to Contact</h2>
+      <Fragment>
+        <video autoPlay muted loop id="myVideo">
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className="App">
+          <div className="App-header">
+          </div>
+          <p className="App-intro">
+            To get started, edit <code>src/App.js</code> and save to reload.
+          </p>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }
 
-class InformationPage extends Component {
+class Information extends Component {
   render() {
+    const { videoSrc } = this.props;
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to Information</h2>
+      <Fragment>
+        <video autoPlay muted loop id="myVideo">
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className="App">
+          <div className="App-header">
+          </div>
+          <p className="App-intro">
+            To get started, edit <code>src/App.js</code> and save to reload.
+          </p>
         </div>
-      </div>
+      </Fragment>
+    );
+  }
+}
+
+class About extends Component {
+  render() {
+    const { videoSrc } = this.props;
+    return (
+       <Fragment>
+        <video autoPlay muted loop id="myVideo">
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className="App">
+          <div className="App-header">
+          </div>
+          <p className="App-intro">
+            To get started, edit <code>src/App.js</code> and save to reload.
+          </p>
+        </div>
+      </Fragment>
     );
   }
 }
@@ -53,7 +93,7 @@ class InformationPage extends Component {
 const MyApp = () => {
     const routeResult = useRoutes(routes);
     
-    return routeResult || <HomePage />;
+    return routeResult || <Home />;
 }
 
 export default MyApp;

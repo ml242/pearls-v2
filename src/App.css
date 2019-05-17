@@ -1,32 +1,34 @@
+@font-face {
+  font-family: HimoFont;
+  src: url(./font/EidetSerReg);
+}
+
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  overflow: hidden;
+  z-index: -100;  
 }
 
-.App {
-  text-align: center;
+.content {
+  text-transform: uppercase;
+  font-family: HimoFont;
+  font-size: 13px;
+  color: #E6E6E6;
+  letter-spacing: 1.25rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.inner {
+  display: flex;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h2 {
+  font-weight: normal !important;
 }

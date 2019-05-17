@@ -9,22 +9,32 @@ const routes = {
     '/about': () => <About videoSrc={'about.mp4'} />,
 };
 
+const Video = props => (
+  <video autoPlay muted loop id="myVideo">
+    <source src={props.videoSrc} type="video/mp4" />
+  </video>
+);
+
 
 class Home extends Component {
   render() {
     const { videoSrc } = this.props;
     return (
       <Fragment>
-        <video autoPlay muted loop id="myVideo">
-          <source src={videoSrc} type="video/mp4" />
-        </video>
-        <div className="App">
-          <div className="App-header">
+        <Video videoSrc={videoSrc} />
+          <div className='content'>
+            <div className='inner'>
+              <div className="left">
+                <img src='pb.png' alt='logo-left' />
+              </div>          
+              <div className="right">
+                <img src='swine.png' alt='logo-right' />
+                <h2>About</h2>
+                <h2>Stockists</h2>
+                <h2>Information</h2>
+              </div>
+            </div>
           </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
-        </div>
       </Fragment>
     );
   }
@@ -35,15 +45,8 @@ class Stockist extends Component {
     const { videoSrc } = this.props;
     return (
       <Fragment>
-        <video autoPlay muted loop id="myVideo">
-          <source src={videoSrc} type="video/mp4" />
-        </video>
+        <Video videoSrc={videoSrc} />
         <div className="App">
-          <div className="App-header">
-          </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
         </div>
       </Fragment>
     );
@@ -55,15 +58,8 @@ class Information extends Component {
     const { videoSrc } = this.props;
     return (
       <Fragment>
-        <video autoPlay muted loop id="myVideo">
-          <source src={videoSrc} type="video/mp4" />
-        </video>
+        <Video videoSrc={videoSrc} />
         <div className="App">
-          <div className="App-header">
-          </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
         </div>
       </Fragment>
     );
@@ -79,11 +75,6 @@ class About extends Component {
           <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="App">
-          <div className="App-header">
-          </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
         </div>
       </Fragment>
     );

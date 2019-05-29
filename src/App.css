@@ -3,6 +3,10 @@
   src: url(./font/EidetSerReg);
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -13,22 +17,133 @@
   z-index: -100;  
 }
 
-.content {
+.overlay {
+  background-color: rgba(0, 0, 0, .15);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  overflow: hidden;
+  z-index: -99;  
+}
+
+.navbar {
+  margin: 4em;
   text-transform: uppercase;
   font-family: HimoFont;
   font-size: 13px;
-  color: #E6E6E6;
+  color: #D6D6D6;
+  letter-spacing: 1.25rem;
+  position: absolute;
+}
+
+.content {
+  text-transform: uppercase;
+  font-family: HimoFont;
+  font-size: 11px;
+  color: #D6D6D6;
   letter-spacing: 1.25rem;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.content-inner {
+  display: flex;
+  flex-basis: 500px;
+  flex-direction: column;
+  letter-spacing: 1rem;
+}
+
+.content-inner-about {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1rem;
+  line-height: 4em;
+  margin: 4em;
+}
+
+.stockist-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.area {
+  color: #1e1e1e;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 3em 0 2em 0 ;
+}
+
+.business-name {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 0 0 2em 0;
+}
+
+.page-link:hover {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+} 
+
 .inner {
   display: flex;
 }
 
+.contact-details {
+  margin: 0; 
+}
+
 h2 {
   font-weight: normal !important;
+  font-size: .85rem;
+}
+@media (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+  }
+
+  .content {
+    width: auto;
+  }
+
+  .navbar {
+    margin: 2em;
+  }
+
+  .content-inner-about {
+    line-height: 1em; 
+  }
+
+  .content-inner {
+    flex-basis: auto;
+    letter-spacing: .5em;
+
+    flex-basis: 200px;
+    letter-spacing: .1em;
+    margin: 6em 1.25em;
+  }
 }

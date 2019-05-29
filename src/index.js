@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MyApp from './App';
+import PBS from './App';
 import './index.css';
 
 ReactDOM.render(
-  <MyApp />,
-  document.getElementById('root')
+  <PBS />,
+  document.getElementById('home-root')
 );

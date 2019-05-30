@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Textfit } from 'react-textfit';
 import { useRoutes } from 'hookrouter';
 import './App.css';
 

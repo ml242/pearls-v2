@@ -3,8 +3,18 @@
   src: url(./font/EidetSerReg);
 }
 
+@font-face: {
+  font-family: HimoBold;
+  src: url(./font/EidetSerBol);
+}
+
 a:link, a:visited, a:hover, a:active {
   color: inherit;
+}
+
+.left, .right-swine {
+  font-family: HimoBold;
+  font-weight: 900;
 }
 
 #myVideo {
@@ -109,8 +119,13 @@ h2 {
   font-weight: normal !important;
   font-size: .85rem;
 }
+
 @media (min-width: 600px) {
   .mobile {
+    display: none;
+  }
+
+  .left-swine {
     display: none;
   }
 }
@@ -139,9 +154,7 @@ h2 {
   }
 
   .content-inner {
-    flex-basis: auto;
     letter-spacing: .5em;
-
     flex-basis: 200px;
     letter-spacing: .1em;
     margin: 6em 1.25em;

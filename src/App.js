@@ -3,16 +3,16 @@ import { useRoutes } from 'hookrouter';
 import './App.css';
 
 const routes = {
-    '/': () => <Home videoSrc={'home.mp4'} />,
-    '/stockists': () => <Stockist videoSrc={'stockist.mp4'} linkUrl={'/'} />,
-    '/information': () => <Information videoSrc={'info.mp4'} linkUrl={'/'} />,
-    '/about': () => <About videoSrc={'about.mp4'} linkUrl={'/'} />,
+    '/': () => <Home videoSrc='home.mp4' poster='home.jpg' />,
+    '/stockists': () => <Stockist videoSrc='stockist.mp4' poster='stockist.jpg' linkUrl={'/'} />,
+    '/information': () => <Information videoSrc='info.mp4' poster='info.jpg' linkUrl={'/'} />,
+    '/about': () => <About videoSrc='about.mp4' poster='about.jpg' linkUrl={'/'} />,
 };
 
 const Video = props => (
   <Fragment>
     <div className='overlay' />
-    <video autoPlay muted loop preload='auto' id="myVideo">
+    <video autoPlay muted loop preload='auto' id="myVideo" poster={props.poster}>
       <source src={props.videoSrc} type="video/mp4" />
     </video>
   </Fragment>

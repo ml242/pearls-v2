@@ -12,7 +12,7 @@ const routes = {
 const Video = props => (
   <Fragment>
     <div className='overlay' />
-    <video autoPlay muted loop prefetch id="myVideo">
+    <video autoPlay muted loop preload='auto' id="myVideo">
       <source src={props.videoSrc} type="video/mp4" />
     </video>
   </Fragment>

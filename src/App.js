@@ -12,7 +12,7 @@ const routes = {
 const Video = props => (
   <Fragment>
     <div className='overlay' />
-    <video autoPlay muted loop id="myVideo">
+    <video autoPlay muted loop prefetch id="myVideo">
       <source src={props.videoSrc} type="video/mp4" />
     </video>
   </Fragment>
@@ -75,9 +75,6 @@ class Stockist extends Component {
                 <span>H</span>
                 <span>E</span>
                 <span>S</span>
-                <span>A</span>
-                <span>N</span>
-                <span>D</span>
                 <span>F</span>
                 <span>A</span>
                 <span>S</span>
@@ -90,44 +87,6 @@ class Stockist extends Component {
                 <span>O</span>
                 <span>M</span>
               </h2>               
-              <h2 className='business-name'>
-                <span>E</span>
-                <span>N</span>
-                <span>D</span>
-              </h2>      
-              <h2 className='business-name'>
-                <span>S</span>
-                <span>E</span>
-                <span>L</span>
-                <span>F</span>
-                <span>R</span>
-                <span>I</span>
-                <span>D</span>
-                <span>G</span>
-                <span>E</span>
-                <span>S</span>
-              </h2>  
-            </div>
-            <div className='stockist-container'>
-              <h2 className='area'>
-                <span>E</span>
-                <span>U</span>
-                <span>R</span>
-                <span>O</span>
-                <span>P</span>
-                <span>E</span>
-              </h2>
-              <h2 className='business-name'>
-                <span>P</span>
-                <span>R</span>
-                <span>I</span>
-                <span>N</span>
-                <span>T</span>
-                <span>E</span>
-                <span>M</span>
-                <span>P</span>
-                <span>S</span>
-              </h2>
             </div>
             <div className='stockist-container'>
               <h2 className='area'>

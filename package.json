@@ -17,6 +17,5 @@
     "eject": "react-scripts eject",
     "now-dev": "react-scripts start",
     "deploy": "aws s3 sync build/ s3://pearls-v2"
-
   }
 }

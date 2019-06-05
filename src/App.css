@@ -12,9 +12,9 @@ a:link, a:visited, a:hover, a:active {
   color: inherit;
 }
 
-.left, .right-swine {
+.left h2, .right-swine {
   font-family: HimoBold;
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 #myVideo {

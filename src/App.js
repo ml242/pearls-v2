@@ -63,10 +63,21 @@ class Stockist extends Component {
       <Fragment>
         <Video videoSrc={videoSrc} />
         <Back linkUrl={linkUrl} />
-        <div className='content'>
+        <div className='content page'>
           <div className='content-inner'>
             <div className='stockist-container'>
               <h2 className='area'><span>U</span><span>K</span></h2>
+              <h2 className='business-name'>
+                <span>L</span>
+                <span>N</span>
+                <span>.</span>
+                <span>C</span>
+                <span>C</span>
+                <span>.</span>
+                <span>C</span>
+                <span>O</span>
+                <span>M</span>  
+              </h2>  
               <h2 className='business-name'>
                 <span>M</span>
                 <span>A</span>
@@ -86,7 +97,40 @@ class Stockist extends Component {
                 <span>C</span>
                 <span>O</span>
                 <span>M</span>
+              </h2>
+              <h2 className='business-name'>
+                <span>S</span>
+                <span>E</span>
+                <span>L</span>
+                <span>F</span>
+                <span>R</span>
+                <span>I</span>
+                <span>D</span>
+                <span>G</span>
+                <span>E</span>
+                <span>S</span>
               </h2>               
+            </div>            
+            <div className='stockist-container'>
+              <h2 className='area'>
+                <span>E</span>
+                <span>U</span>
+                <span>R</span>
+                <span>O</span>
+                <span>P</span>
+                <span>E</span>
+              </h2>
+              <h2 className='business-name'>
+                <span>P</span>
+                <span>R</span>
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>E</span>
+                <span>M</span>
+                <span>P</span>
+                <span>S</span>  
+              </h2>  
             </div>
             <div className='stockist-container'>
               <h2 className='area'>
@@ -129,6 +173,20 @@ class Stockist extends Component {
                 <span>O</span>
               </h2>
             </div>
+            <div className='stockist-container'>
+              <h2 className='area'>
+                <span>A</span>
+                <span>S</span>
+                <span>I</span>
+                <span>A</span>
+              </h2>
+              <h2 className='business-name'>
+                <span>I</span>
+                <span>.</span>
+                <span>T</span>
+                <span>.</span>
+              </h2>
+            </div>
           </div>
         </div>
       </Fragment>
@@ -143,7 +201,7 @@ class Information extends Component {
       <Fragment>
         <Video videoSrc={videoSrc} />
         <Back linkUrl={linkUrl} />
-        <div className='content'>
+        <div className='content page'>
           <div className='content-inner'>
             <div className='stockist-container'>
               <h2 className='area'>
@@ -214,7 +272,7 @@ class About extends Component {
       <Fragment>
         <Video videoSrc={videoSrc} />
         <Back linkUrl={linkUrl} />
-        <div className='content'>
+        <div className='content page'>
           <div className='content-inner-about'>            
             Pearls Before Swine manifests via a counter-research model that explores defected precious metals and pearls. Purity is a ubiquitous facet of quantification within traditional industry standards of the fine jewellery sector. The current climate is a conglomerate of brands fabricating jewellery at mass. PBS stands as one of the few artisanal jewellery brands, handcrafting each piece from Vancouver, BC, using defunct apparatus present in the fields of science and corporate cosmetic dentistry.
           </div>

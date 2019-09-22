@@ -141,8 +141,9 @@ h2 {
     margin: 2em;
   }
 
-  .content {
+  .page {
     width: auto;
+    height: auto !important;
   }
 
   .navbar {
@@ -158,5 +159,11 @@ h2 {
     flex-basis: 200px;
     letter-spacing: .1em;
     margin: 6em 1.25em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content-inner-about {
+    line-height: 2em; 
   }
 }
